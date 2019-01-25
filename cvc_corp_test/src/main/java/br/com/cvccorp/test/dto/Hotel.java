@@ -1,4 +1,4 @@
-package br.com.uol.selecao.dto;
+package br.com.cvccorp.test.dto;
 
 import java.util.ArrayList;
 import java.util.List;

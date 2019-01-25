@@ -61,6 +61,14 @@ public class ConsumoAPIHotels {
 		
 		ResponseEntity<Hotel> response = restTemplate.getForEntity(configUtil.getProperty("cvccorp.url.hotel")+idHotel, Hotel.class);
 		
+		ResponseEntity<<Hotel> response = 
+				restTemplate.exchange(
+						configUtil.getProperty(configUtil.getProperty("cvccorp.url.hotel")+idHotel, 
+						HttpMethod.GET, null, 
+						new ParameterizedTypeReference<List<Hotel>>(){}
+						);				
+		List<Hotel> hoteis = response.getBody();
+		
 		return response.getBody();
 	}
 	

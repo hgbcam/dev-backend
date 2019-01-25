@@ -3,8 +3,8 @@ package br.com.cvccorp.test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import br.com.cvccorp.test.dto.Hotel;
 import br.com.cvccorp.test.externo.ConsumoAPIHotels;
-import br.com.uol.selecao.dto.Hotel;
 
 public class Application {
 

@@ -1,4 +1,4 @@
-package br.com.uol.selecao.dto;
+package br.com.cvccorp.test.dto;
 
 /** Classe DTO represta o preço de uma acomodação 
  * 

@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import br.com.cvccorp.test.dominio.Cliente;
+import br.com.cvccorp.test.dto.Hotel;
 import br.com.cvccorp.test.externo.ConsumoAPIHotels;
-import br.com.uol.selecao.dto.Hotel;
 
 /**
  * Implementa os métodos que irão tratar os Requests, 

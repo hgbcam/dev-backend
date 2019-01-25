@@ -2,7 +2,7 @@ package br.com.cvccorp.test.externo;
 
 import java.util.List;
 
-import br.com.uol.selecao.dto.Hotel;
+import br.com.cvccorp.test.dto.Hotel;
 
 /** Interface para o cliente da API de Hoteis a ser consumida.
  * 
