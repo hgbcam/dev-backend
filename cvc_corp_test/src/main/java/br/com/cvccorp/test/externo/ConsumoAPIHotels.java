@@ -9,8 +9,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.client.RestTemplate;
 
+import br.com.cvccorp.test.dto.Hotel;
 import br.com.cvccorp.test.util.ConfigUtil;
-import br.com.uol.selecao.dto.Hotel;
 
 /**
  * Classe para consumo da API disponibilizada para o teste.
@@ -59,17 +59,18 @@ public class ConsumoAPIHotels {
 	public Hotel buscarHotel(long idHotel){
 		RestTemplate restTemplate = new RestTemplate();	
 		
-		ResponseEntity<Hotel> response = restTemplate.getForEntity(configUtil.getProperty("cvccorp.url.hotel")+idHotel, Hotel.class);
+		//ResponseEntity<Hotel> response = restTemplate.getForEntity(configUtil.getProperty("cvccorp.url.hotel")+idHotel, Hotel.class);
 		
-		ResponseEntity<<Hotel> response = 
-				restTemplate.exchange(
-						configUtil.getProperty(configUtil.getProperty("cvccorp.url.hotel")+idHotel, 
-						HttpMethod.GET, null, 
-						new ParameterizedTypeReference<List<Hotel>>(){}
-						);				
-		List<Hotel> hoteis = response.getBody();
+//		ResponseEntity<Hotel> response = 
+//				restTemplate.exchange(
+//						configUtil.getProperty(configUtil.getProperty("cvccorp.url.hotel")+idHotel, 
+//						HttpMethod.GET, null, 
+//						new ParameterizedTypeReference<Hotel>(){});				
+		//List<Hotel> hoteis = response.getBody();
 		
-		return response.getBody();
+		//return response.getBody();
+		
+		return null;
 	}
 	
 }
